@@ -1,0 +1,33 @@
+#header{
+        background:url("http://farm1.staticflickr.com/46/137042505_d8a84820b3_o.jpg")
+}
+
+#body{
+       background-image:url("http://imageshack.us/photo/my-images/202/mm0d.png");
+        background-repeat:no-repeat;
+        background-position:right top
+}
+
+.chat-log{
+        font-size:10pt;
+        background:#DAE0E6;
+        color:#000;
+        overflow:auto
+}
+
+.menugroup .button{
+        background:#3A5FCD
+}
+
+.menugroup .menugroup{
+        text-align:center
+}
+
+.button:hover{
+        background:#4876FF
+}
+
+.userlist{
+        border-left:1px solid #D5DDE4;
+        background:#C8CDD1
+}
