@@ -1,33 +1,36 @@
 #header{
-        background:url("http://farm1.staticflickr.com/46/137042505_d8a84820b3_o.jpg")
+        background:url("");
 }
 
-#body{
-       background-image:url(<a href="http://imgur.com/bz94PEh"><img src="http://i.imgur.com/bz94PEh.png" title="Hosted by imgur.com" /></a>)
-        background-repeat:no-repeat;
-        background-position:right top
+body{
+       	background-position:right top;
+	background-image:http://i.imgur.com/xnBFfco.jpg;  
+	background-repeat: no-repeat;
 }
 
 .chat-log{
-        font-size:10pt;
-        background:#DAE0E6;
-        color:#000;
-        overflow:auto
+	font-size:10pt;
+	overflow:auto;
+	background-image:url(http://i.imgur.com/GP7DoaZ.png);
+	background-repeat: no-repeat;
 }
 
 .menugroup .button{
-        background:#3A5FCD
+        background:#3A5FCD;
 }
 
 .menugroup .menugroup{
-        text-align:center
+        text-align:center;
 }
 
 .button:hover{
-        background:#4876FF
+        background:#4876FF;
 }
 
 .userlist{
         border-left:1px solid #D5DDE4;
-        background:#C8CDD1
+        background:#C8CDD1;
 }
+
+
+
