@@ -631,6 +631,19 @@ var commands = exports.commands = {
 			'~ <b>Administrator</b> - They can do anything, like change what this message says<br />' +
 			'# <b>Room Owner</b> - They are administrators of the room and can almost totally control it');
 	},
+	
+	aura: 'auraillusions',
+        auraillusions: function(target, room, user) {  
+                 if (!this.canBroadcast()) return;
+                 this.sendReplyBox('<center><font size=3><b><font color=green>AuraIllusions</font></b></font> <br> <img src="http://fc00.deviantart.net/fs39/f/2008/316/2/2/Rhydon_in_the_Thunderstorm_by_Wavebird.jpg">')},
+        
+        mac: 'macrarazy',
+         macrarazy: function(target, room, user) {  
+                 if (!this.canBroadcast()) return;
+                 this.sendReplyBox('<center><font size=3><b>macrarazy</font></b> <br> <img src="http://www.smogon.com/media/forums/data/avatars/l/195/195459.jpg.m.1379686413" <br> <marquee><b>Yerh baby, yerh!</b></marquee> <br> <blink><b>Rank:<font color=red> Coder')},
+                 
+         
+        },
 
 	opensource: function(target, room, user) {
 		if (!this.canBroadcast()) return;
