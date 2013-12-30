@@ -303,10 +303,10 @@ var commands = exports.commands = {
                         }
                 }
                 if (target === 'custom') {
-                        price = 20;
+                        price = 15;
                         if (price <= user.money) {
                                 user.money = user.money - price;
-                                this.sendReply('You have purchased a custom avatar. You need to message an Admin capable of adding (Ask BlakJack or Skarr).');
+                                this.sendReply('You have purchased a custom avatar. You need to message an Admin capable of adding (Ask AuraIllusions or macrarazy, and Alakazazm for getting one).');
                                 user.canCustomAvatar = true;
                                 this.add(user.name + ' has purchased a custom avatar!');
                         } else {
@@ -314,10 +314,10 @@ var commands = exports.commands = {
                         }
                 }
                 if (target === 'animated') {
-                        price = 35;
+                        price = 20;
                         if (price <= user.money) {
                                 user.money = user.money - price;
-                                this.sendReply('You have purchased a custom animated avatar. You need to message an Admin capable of adding (BlakJack or Skarr).');
+                                this.sendReply('You have purchased a custom animated avatar. You need to message an Admin capable of adding (AuraIllusions or macrarazy, and Alakazazm for getting one).');
                                 user.canAnimatedAvatar = true;
                                 this.add(user.name + ' has purchased a custom animated avatar!');
                         } else {
@@ -325,7 +325,7 @@ var commands = exports.commands = {
                         }
                 }
                 if (target === 'room') {
-                        price = 100;
+                        price = 40;
                         if (price <= user.money) {
                                 user.money = user.money - price;
                                 this.sendReply('You have purchased a chat room. You need to message an Admin so that the room can be made.');
@@ -357,13 +357,13 @@ var commands = exports.commands = {
                                 return this.sendReply('You do not have enough bucks for this. You need ' + (price - user.money) + ' more bucks to buy ' + target + '.');
                         }
                 }
-                if (target === 'declare') {
-                        price = 25;
+                if (target === 'voice') {
+                        price = 30;
                         if (price <= user.money) {
                                 user.money = user.money - price;
-                                this.sendReply('You have purchased the ability to declare (from Admin). To do this message an Admin (~) with the message you want to send. Keep it sensible!');
+                                this.sendReply('Congratulations! You can now be a Voiced user in the Luminose Server! Just PM an Admin to get your promotion (maybe denied under certain circumstances).');
                                 user.canDecAdvertise = true;
-                                this.add(user.name + ' has purchased the ability to declare from an Admin!');
+                                this.add(user.name + ' will shortly be granted Global Voice!');
                         } else {
                                 return this.sendReply('You do not have enough bucks for this. You need ' + (price - user.money) + ' more bucks to buy ' + target + '.');
                         }
@@ -402,12 +402,12 @@ var commands = exports.commands = {
                 if (!this.canBroadcast()) return;
                 this.sendReplyBox('<center><h4><b><u>The Luminose Server Shop</u></b></h4><table border="1" cellspacing ="0" cellpadding="3"><tr><th>Command</th><th>Description</th><th>Cost</th></tr>' +
                         '<tr><td>Symbol</td><td>Buys a custom symbol to go infront of name and puts you at top of userlist (temporary until restart)</td><td>5</td></tr>' +
-                        '<tr><td>Custom</td><td>Buys a custom avatar to be applied to your name (you supply)</td><td>20</td></tr>' +
-                        '<tr><td>Animated</td><td>Buys an animated avatar to be applied to your name (you supply)</td><td>35</td></tr>' +
-                        '<tr><td>Room</td><td>Buys a chatroom for you to own (within reason, can be refused)</td><td>100</td></tr>' +
+                        '<tr><td>Custom</td><td>Buys a custom avatar to be applied to your name (you supply)</td><td>15</td></tr>' +
+                        '<tr><td>Animated</td><td>Buys an animated avatar to be applied to your name (you supply)</td><td>20</td></tr>' +
+                        '<tr><td>Room</td><td>Buys a chatroom for you to own (within reason, can be refused)</td><td>40</td></tr>' +
                         '<tr><td>Trainer</td><td>Buys a trainer card which shows information through a command such as /mac (note: third image costs 10 bucks extra, ask for more details)</td><td>40</td></tr>' +
                         '<tr><td>Fix</td><td>Buys the ability to alter your current custom avatar or trainer card (don\'t buy if you have neither)!</td><td>10</td></tr>' +
-                        '<tr><td>Declare</td><td>You get the ability to get two declares from an Admin in lobby. This can be used for league advertisement (not server)</td><td>25</td></tr>' +
+                        '<tr><td>Global Voice</td><td>Get Globally Voiced in the Luminose Server! (may be denied)</td><td>30</td></tr>' +
                         '</table><br />To buy an item from the shop, use /buy [command]. <br />Also do /moneycommands to view money based commands.</center>');
                 if (closeShop) return this.sendReply('|raw|<center><h3><b>The shop is currently closed and will open shortly.</b></h3></center>');
         },
@@ -648,7 +648,6 @@ var commands = exports.commands = {
                 return this.sendReplyBox('The command for the Money system:<br />' + 
                         '/shop - Show the shop with the items you can buy.<br />' + 
                         '/buy [command] - Buy an item from the shop using the item command name.<br />' +
-                        '/getbucks - A basic introduction into the currency system.<br />' + 
                         '/atm [username] - Show your bucks (if just /atm) or show someone else\'s bucks.<br />' + 
                         '/prizes - A link to the prize page and ways to earn bucks.');
         },
