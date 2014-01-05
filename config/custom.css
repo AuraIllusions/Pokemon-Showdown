@@ -4,14 +4,14 @@
 
 body{
        	background-position:right top;
-	background-image:http://i.imgur.com/xnBFfco.jpg;  
+	background-image:url(http://i.imgur.com/qHwD6jm.jpg); 
 	background-repeat: no-repeat;
 }
 
 .chat-log{
 	font-size:10pt;
 	overflow:auto;
-	background-image:url(http://i.imgur.com/GP7DoaZ.png);
+	background-image:url(http://i.imgur.com/4SKDqIX.png);
 	background-repeat: no-repeat;
 }
 
@@ -31,6 +31,5 @@ body{
         border-left:1px solid #D5DDE4;
         background:#C8CDD1;
 }
-
 
 
